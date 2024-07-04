@@ -4,7 +4,7 @@ import google.generativeai as genai
 app = Flask(__name__)
 
 # Configure the API key
-genai.configure(api_key="AIzaSyDsyaX_Hf1mjYoSeBs4IJkpa-IwKjG0Wt8")
+genai.configure(api_key="Type your key")
 model = genai.GenerativeModel('gemini-1.0-pro-latest')
 # print(model.generate_content("give a paragrap on anstronomy and some refference links give it in inside a div form"))
 @app.route('/generate', methods=['POST'])
